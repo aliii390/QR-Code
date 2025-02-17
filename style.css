@@ -1,94 +1,97 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
-body{
-    background: rgb(27, 139, 167);
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #3f3b3b;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
+    max-width: 500px;
+    width: 100%;
 }
 
-.flex{
-    margin-top: 10%;
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.container{
-    width: 400px;
-    height: 400px;
-    background: #fff;
-    box-shadow: 0 0 8px #000;
-    border-radius: 10px;
+.input, .btn {
+    font-size: 1rem;
     padding: 10px;
-    text-align: center;
-}
-
-
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-}
-
-.info,.btn{
-    width: 61%;
-    padding: 2px;
-    font-size: 16px;
+    margin: 10px 0;
     border-radius: 5px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-   
+    border: 1px solid #ddd;
+    width: 80%;
 }
 
-.info{
-    border: 0.5px solid #0005;
-    outline: none;
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.info:focus{
-    background: #0005;
-}
-
-.btn{
-    border: none;
+button {
+    background-color: #007bff;
+    color: white;
     cursor: pointer;
-    background: rgb(27, 139, 167);
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
 }
 
-.btn:hover{
-    background-color: #0005;
+button:hover {
+    background-color: #0056b3;
 }
 
-.qr-img{
-    width: 50%;
-    margin-top: 10px;
+.qr-img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
     display: none;
 }
 
-/* #download-btn {
-    margin-top: 10px;
-} */
-
-.btnn{
-    margin-top: 10%;
+#download-link {
+    margin-top: 20px;
+    display: block;
 }
 
+#download-btn {
+    width: 100%;
+    background-color: #28a745;
+}
 
-@media screen and (max-width:767px) {
+#download-btn:hover {
+    background-color: #218838;
+}
 
-    .flex{
-        display: flex;
-       
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
     }
-    .container{
-        width: 100%;
-        margin-top: 53%;
-        height: 50%;
-    } 
 
+    .input, .btn {
+        width: 100%;
+    }
 }

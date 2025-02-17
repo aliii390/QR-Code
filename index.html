@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR-code</title>
+    <title>Générateur de QR-CODE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-   
 </head>
 <body>
     <div class="flex">
         <div class="container">
             <h1>Générateur de QR-CODE</h1>
-            <input type="text" class="info" id="info" placeholder="Entrez l'url ou le texte à générer">
-            <button id="btn" class="btn" type="submit">Générer</button>
+            <input type="text" class="info" id="info" placeholder="Entrez l'URL ou le texte à générer">
+            <button id="btn" class="btn">Générer</button>
             <img src="" alt="QR Code" class="qr-img" id="qr-img">
             <a id="download-link" href="" download="QRCode.png" style="display: none;">
                 <button class="btn" id="download-btn"><i class="fa-solid fa-download"></i>Télécharger le QR-Code</button>
@@ -22,5 +21,5 @@
     </div>
 
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
